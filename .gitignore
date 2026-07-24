@@ -1,0 +1,19 @@
+# 仮想環境・Pythonバージョン指定（各作業フォルダの分もまとめて無視）
+.venv/
+.python-version
+
+# Python キャッシュ・ビルド関連
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# 環境変数ファイル
+.env
+
+# エディタ・OS
+.vscode/
+.idea/
+.DS_Store
