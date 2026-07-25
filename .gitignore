@@ -17,3 +17,6 @@ dist/
 .vscode/
 .idea/
 .DS_Store
+
+# VSCode ワークスペースファイル
+*.code-workspace
