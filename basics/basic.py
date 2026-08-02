@@ -1,10 +1,33 @@
-print("Hello World Python!")
+i = [1, 2, 3, 4, 5]
+j = i
+j[0] = 100
+print('j = ', j)
+print('i = ', i)
 
-s = 'My name is Mike. Hi Mike.'
-print(s)
-print(s.find('Mike'))
-print(s.rfind('Mike'))
+x = [1, 2, 3, 4, 5]
+y = x.copy()
+y[0] = 100
+print('y =', y)
+print('x =', x)
 
-name = 'kenta'
-family = 'nakamura'
-print(f'My name is {name} {family}. watashi ha {family} {name}')
+X = 20
+Y = X
+Y = 5
+print(id(X))
+print(id(Y))
+print(Y)
+print(X)
+
+X = ['a', 'b']
+Y = X
+Y[0] = 'p'
+print(id(X))
+print(id(Y))
+print(Y)
+print(X)
+
+a = 100
+b = 200
+print(a, b)
+a, b = b, a
+print(a, b)
