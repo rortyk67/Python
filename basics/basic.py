@@ -1,33 +1,31 @@
-i = [1, 2, 3, 4, 5]
-j = i
-j[0] = 100
-print('j = ', j)
-print('i = ', i)
+x = {'a' : 1}
+y = x
+y['a'] = 1000
+print(x)
+print(y)
 
-x = [1, 2, 3, 4, 5]
+x = {'a': 1}
 y = x.copy()
-y[0] = 100
-print('y =', y)
-print('x =', x)
+y['a'] = 1000
+print(x)
+print(y)
 
-X = 20
-Y = X
-Y = 5
-print(id(X))
-print(id(Y))
-print(Y)
-print(X)
+import copy
+x = {'a': [1, 2]}
+shallow = x.copy()
+deep = copy.deepcopy(x)
 
-X = ['a', 'b']
-Y = X
-Y[0] = 'p'
-print(id(X))
-print(id(Y))
-print(Y)
-print(X)
+x['a'].append(99)
+print(shallow)
+print(deep)
 
-a = 100
-b = 200
-print(a, b)
-a, b = b, a
-print(a, b)
+a = {1, 2, 2, 3, 4, 4, 4, 5, 6}
+print(a)
+print(type(a))
+b = {2, 3, 6, 7}
+print(a-b)
+print(b-a)
+
+my_friends = {'A', 'C', 'D'}
+A_friends = {'B', 'D', 'E', 'F'}
+print(my_friends & A_friends)
